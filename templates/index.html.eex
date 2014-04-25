@@ -10,8 +10,9 @@
 
   <script type="text/javascript" src="/static/assets/application.js"></script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/static/assets/application.css"/>
-  <link rel="shortcut icon" href="/static/favicon.ico"/>
+  <link rel="shortcut icon" href="https://www.bloc.io/assets/logos/square_logo50x50.png"/>
 </head>
 <body>
 
@@ -22,10 +23,10 @@
   <div class="left-panel-wrapper" {{bind-attr class="isLeftMenuOpen"}}>
     <div class="left-panel">
       <div class="app-name">
-        Mogo Chat
+        Bloc Office Hours
         <div class="logout">
           {{#link-to "logout"}}
-            <img src="/static/assets/logout.png" id="logout-btn" alt="Logout" title="Logout"/>
+            <i class='fa fa-sign-out'></i>
           {{/link-to}}
         </div>
       </div>
