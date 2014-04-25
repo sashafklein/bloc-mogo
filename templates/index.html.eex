@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mogo Chat</title>
+  <title>Bloc Office Hours</title>
   <meta name="HandheldFriendly" content="True"/>
   <meta name="google" value="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -9,6 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <script type="text/javascript" src="/static/assets/application.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="/static/assets/application.css"/>
   <link rel="shortcut icon" href="/static/favicon.ico"/>
 </head>
@@ -39,7 +40,9 @@
           {{#each room_user_state in controller}}
             <li {{bind-attr class="room_user_state.joined:joined:unjoined"}}>
               {{#if room_user_state.joined }}
-                <span class="leave-room" {{action "leaveRoom" this}}>&cross;</span>
+                <span class="leave-room" {{action "leaveRoom" this}}>
+                  <i class='fa fa-reply'></i>
+                </span>
               {{/if}}
               <a class="room-name" {{action "joinOrOpen" this}}>{{room_user_state.room.name}}</a>
               {{#if room_user_state.notification }}
