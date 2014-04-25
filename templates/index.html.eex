@@ -209,7 +209,7 @@
       </div>
 
       <div class="user-details">
-        Hello {{#link-to "user.edit" currentUser}}{{currentUser.name}}{{/link-to}} ~!
+        Hello {{#link-to "user.edit" currentUser}}{{currentUser.name}}{{/link-to}}!
       </div>
 
       <div class="back-to-chat">{{#link-to "index"}}Back to chat{{/link-to}}</div>
