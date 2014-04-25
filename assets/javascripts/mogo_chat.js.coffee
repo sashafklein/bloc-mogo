@@ -36,18 +36,16 @@ class MogoChat.PluginRegistry
 class MogoChat.PaintBox
   nextColor: 0
   colors: [
-    "F57DBA"
-    "829DE7"
-    "77B546"
-    "FFCC20"
-    "A79D95"
-    "809DAA"
-    "9013FE"
-    "637AB2"
-    "BBAD7C"
-    "C831DD"
-    "71CCD3"
-    "417505"
+    "00adad"
+    "0b666b"
+    "162d3c"
+    "705ca0"
+    "f15a24"
+    "ff931e"
+    "e74c3c"
+    "aa0804"
+    "e84c3c"
+    "66CCFF"
   ]
 
   getColor: ->
